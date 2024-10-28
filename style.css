@@ -1,0 +1,350 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.feature-item {
+    text-align: center;
+    width: 30%;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fade-in animation to sections */
+.hero, .features {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to the feature items */
+.feature-item {
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Add delays to each item for staggered animation */
+.feature-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.feature-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.feature-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+header h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #333;
+    width: 0;
+    animation: typing 2s steps(20) forwards;
+}
+/* General Section Outlines */
+header, .hero, .features, footer {
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Soft rounded corners */
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Hero Section Border Styling */
+.hero {
+    background-color: #f8f8f8; /* Light background for separation */
+    border-left: 4px solid #333; /* Accent border */
+}
+
+/* Feature Items Border Styling */
+.feature-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+/* Feature Item Hover Effect */
+.feature-item:hover {
+    box-shadow: 0 6px 12px rgba(/* Body Border Frame */
+body {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft outer shadow */
+    background-color: #fdfdfd;
+}
+0, 0, 0, 0.1); /* Slightly stronger shadow */
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Footer Outline */
+footer {
+    background-color: #f1f1f1;
+    border-top: 2px solid #333; /* Darker border to emphasize footer */
+}
+/* Body Border Frame */
+body {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft outer shadow */
+    background-color: #fdfdfd;
+}
+.cta-button {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Freelancer Space Layout */
+.freelancer-space {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.profile-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Submission Form */
+.submission-form h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.submission-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submission-form input, .submission-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+.submission-form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submission-form button:hover {
+    background-color: #555;
+}
+
+/* Articles Showcase */
+.articles-showcase h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.article-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.article-item h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.article-item p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
